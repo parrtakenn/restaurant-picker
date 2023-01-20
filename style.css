@@ -11,7 +11,10 @@ html, body {
 }
 
 #count-string {
-    padding-top: 40vh;
+    padding-top: 36vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
 }
 
 #your-restaurant-picked {
@@ -19,6 +22,8 @@ html, body {
     margin: 10px;
     margin-bottom: 20px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #restaurant-chooser {
