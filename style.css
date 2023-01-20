@@ -29,7 +29,7 @@ html, body {
 #restaurant-chooser {
     color: rgba(255, 255, 255, 0.8);
     background-image: linear-gradient(#434343 0%, black 100%);
-    border: solid 1px rgba(255, 166, 0, 0.459);
+    border: solid 1px rgb(53, 53, 53);
     padding: 10px 14px;
     border-radius: 10px;
     font-weight: normal;

@@ -62,5 +62,5 @@ function chooseRestaurant() {
     document.getElementById('your-restaurant-picked').innerHTML = (restaurants[random]);
 
     let restaurantCount = restaurants.length;
-    document.getElementById("count-string").innerHTML = `There are currently ${restaurantCount} restaurants in the list. You're going to: `;
+    document.getElementById("count-string").innerHTML = `${restaurantCount} total restaurants...you're going to: `;
 }
