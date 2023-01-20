@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #fc9458 0%, #F7CE68 100%);  
+    background-image: linear-gradient(360deg, #4f69fc 0%, #fc694f 60%, #fc9458 80%, #F7CE68 100%);  
 }
 
 .container, p {
@@ -10,13 +10,14 @@ html, body {
     justify-content: center;
 }
 
-.container {
+#count-string {
     padding-top: 40vh;
 }
 
 #your-restaurant-picked {
-    font-size: 100px;
+    font-size: 90px;
     margin: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -38,14 +39,14 @@ html, body {
 
 @media (max-width: 700px) {
     #your-restaurant-picked {
-        font-size: 70px;
+        font-size: 60px;
         margin: 10px;
     }
 }
 
 @media (max-width: 500px) {
     #your-restaurant-picked {
-        font-size: 40px;
+        font-size: 30px;
         margin: 10px;
     }
 }
