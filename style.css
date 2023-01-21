@@ -17,6 +17,7 @@ html, body {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+    font-family: "Syne Mono", sans-serif;
 }
 
 #your-restaurant-picked {
@@ -26,6 +27,7 @@ html, body {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: "Bungee Shade", sans-serif;   
 }
 
 #restaurant-chooser {
@@ -35,8 +37,18 @@ html, body {
     padding: 10px 14px;
     border-radius: 10px;
     font-weight: normal;
+    font-family: "Press Start 2P", sans-serif;
     text-transform: uppercase;
     transition: all 0.1s ease-in-out;
+    animation-name: glow;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+    0% {box-shadow: 0 0 15px 5px white; }
+    50% {box-shadow: none;}
+    100% {box-shadow: 0 0 15px 5px white;}
 }
   
 #restaurant-chooser:hover {
@@ -53,7 +65,7 @@ html, body {
 
 @media (max-width: 500px) {
     #your-restaurant-picked {
-        font-size: 30px;
+        font-size: 50px;
         margin: 10px;
     }
 }
