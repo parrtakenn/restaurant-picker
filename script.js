@@ -73,6 +73,8 @@ function chooseRestaurant() {
         "Cafe Shambala",
         "Old Bridge Cafe",
         "El Rocoto Peruvian",
+        "Chunga's",
+        "Banbury Cross Donuts",
 
         // New Restaurants recommended by ChatGPT
         "Log Haven",
@@ -106,7 +108,31 @@ function chooseRestaurant() {
         "The Riverhorse on Main",
         "The Wasatch Brew Pub",
         "Pallet",
-        "Valter's Osteria"
+        "Valter's Osteria",
+
+        // Recommended by mom website
+        "Shooting Star Saloon",
+        "Wimpy and Fritz",
+        "Pretty Bird",
+        "Siegfried's Delicatessen",
+        "Beer Bar/Bar X",
+        "HSL",
+        "Caputo's Market & Deli",
+        "Chanon Thai Café",
+        "Freshie’s Lobster Salt Lake City",
+        "Laziz Kitchen",
+        "Pacific Seas Restaurant",
+        "Kyoto Japanese Restaurant",
+        "The Park Café",
+        "Mahider Ethiopian",
+        "Finca",
+        "Mazza",
+        "Sweet Lake Biscuits & Limeade",
+        "Saffron Valley",
+        "11 Hauz",
+        "Feldman's Deli",
+        "Table X",
+        "Slackwater Pizzeria & Pub"
     ];
 
     const random = Math.floor(Math.random() * restaurants.length);
