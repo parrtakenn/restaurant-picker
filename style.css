@@ -16,6 +16,7 @@ html, body {
     padding-top: 32vh;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 0px;
     text-align: center;
     font-family: "Syne Mono", sans-serif;
 }
@@ -37,7 +38,6 @@ html, body {
     border: solid 1px rgb(53, 53, 53);
     padding: 10px 14px;
     margin-top: 16px;
-    margin-bottom: 40px;
     border-radius: 10px;
     font-weight: normal;
     font-family: "Press Start 2P", sans-serif;
