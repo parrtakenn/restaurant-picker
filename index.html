@@ -21,6 +21,12 @@
             <i><p id="your-restaurant-picked"></p></i>
         </div>
         <div class="container">
+            <!-- <label for="restaurant-choice"></label> -->
+            <select name="restaurants" id="restaurant">
+                <option value="" disabled selected>Favorites or New?</option>
+                <option value="Favorites">Favorites</option>
+                <option value="New">New</option>
+            </select>
             <button onclick="chooseRestaurant()"" id="restaurant-chooser">Choose a restaurant</button>
         </div>
         <!--[if lt IE 7]>
