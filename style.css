@@ -16,6 +16,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #count-string {
@@ -47,7 +48,11 @@ p {
     background-image: linear-gradient(#434343 0%, black 100%);
     color: white;
     text-align: center;
-    
+    border: none;
+}
+
+option {
+    text-align: center;
 }
 
 #restaurant-chooser {
