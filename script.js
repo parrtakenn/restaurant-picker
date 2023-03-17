@@ -1,6 +1,10 @@
 const favRestaurants = [
     // Favorites
-    "Joy Luck",
+    { 
+        name: "Joy Luck",
+        city: "Bountiful"
+    
+    },
     "Boba World",
     "Pizza Hut",
     "The Pie Pizzeria",
