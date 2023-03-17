@@ -29,7 +29,6 @@ const favRestaurants = [
     "Apollo Burger",
     "Five Guys",
     "RJ Grill",
-    "Hungry Hawaiian",
     "Janet's Sunshine Café",
     "Chipotle",
     "Costco Food Court",
@@ -38,18 +37,12 @@ const favRestaurants = [
     "Cubby's",
     "Panda Express",
     "Sushi Burrito",
-    "Sawadee Thai Restaurant",
     "CHOM Burger",
-    "Ramblin Roads",
     "Texas Roadhouse",
     "Zao Cafe",
-    "Royal India Bountiful",
-    "Garage on Beck",
-    "Alice's Kitchen",
     "Burger Bar",
     "Rosa's Cafe",
     "Cupbop",
-    "Costa del Sol",
     "Maddox",
     "Morty's Cafe",
     "Tandoori Oven",
@@ -59,15 +52,15 @@ const favRestaurants = [
     "Royal Express Logan",
     "Shake Shack",
     "Cafe Sabor",
-    "Z Brothers Pizza",
-    "Santorini's Greek Grill",
     "Fuji Sushi",
     "Kokonut Island Grill",
     "Nico's Restaurant",
     "Chubby's Mexican",
     "El Rocoto Peruvian",
     "Chunga's",
-    "Banbury Cross Donuts"
+    "Banbury Cross Donuts",
+    "Rancho Market",
+    "Andinitas Restaurant (Colombian)"
 ];
 
 const newRestaurants = [
@@ -76,12 +69,21 @@ const newRestaurants = [
     "Log Haven",
     "Handle",
     "The Copper Onion",
+    "Sawadee Thai Restaurant",
+    "Costa del Sol",
     "Takashi",
     "Tupelo",
+    "Hungry Hawaiian",
+    "Santorini's Greek Grill",
     "The Paris",
+    "Royal India Bountiful",
+    "Garage on Beck",
+    "Alice's Kitchen",
     "Current Fish & Oyster",
     "Red Iguana",
+    "Ramblin Roads",
     "Hell's Backbone Grill",
+    "Z Brothers Pizza",
     "The Farm",
     "Bambara",
     "The Front",
@@ -106,7 +108,7 @@ const newRestaurants = [
     "Pallet",
     "Valter's Osteria",
 
-    // Recommended by mom website
+    // Recommended by m website
     "Shooting Star Saloon",
     "Wimpy and Fritz",
     "Pretty Bird",
@@ -139,28 +141,36 @@ const newRestaurants = [
     "Lean Thai"
 ];
 
-function chooseRestaurant() {
-    if (document.getElementById('restaurant').value == 'Favorites') {
-        let randomFav = Math.floor(Math.random() * favRestaurants.length);
-        document.getElementById('your-restaurant-picked').innerHTML = (favRestaurants[randomFav]);
+var listSelection = document.getElementById('restaurant')
 
-        let restaurantCount = favRestaurants.length;
-        document.getElementById("count-string").innerHTML = `${restaurantCount} total restaurants...you're going to: `;
-        console.log(favRestaurants.length);
+function countRestaurants(list) {
+    let restaurantCount = list.length;
+        document.getElementById('count-string').innerHTML = `${restaurantCount} total restaurants...you're going to: `;
+}
+
+function generateRandomVar(list) {
+    randomNum = Math.floor(Math.random() * list.length);
+}
+
+function generateRandomRestaurant(list, listposition) {
+    document.getElementById('your-restaurant-picked').innerHTML = (list[listposition]);
+}
+
+function chooseRestaurant() {
+    if (listSelection.value == 'Favorites') {
+        countRestaurants(favRestaurants);
+        generateRandomVar(favRestaurants);
+        generateRandomRestaurant(favRestaurants, randomNum);
     }
 
-    if (document.getElementById('restaurant').value == 'New') {
-        let randomNew = Math.floor(Math.random() * newRestaurants.length);
-        document.getElementById('your-restaurant-picked').innerHTML = (newRestaurants[randomNew]);
-
-        let restaurantCount = newRestaurants.length;
-        document.getElementById("count-string").innerHTML = `${restaurantCount} total restaurants...you're going to: `;
-        console.log(newRestaurants.length);
+    if (listSelection.value == 'New') {
+        countRestaurants(newRestaurants);
+        generateRandomVar(newRestaurants);
+        generateRandomRestaurant(newRestaurants, randomNum);
+        
     };
 
-    if (document.getElementById('restaurant').value == '') {
+    if (listSelection.value == '') {
         alert( 'Choose favorites or new' );
     }
 }
-
-

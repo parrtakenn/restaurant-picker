@@ -46,6 +46,7 @@ select {
     text-align: -webkit-center;
     text-align: -moz-center;
     text-align-last: center;
+    background-color: black;
 }
 
 #arrowDwn {
@@ -53,7 +54,7 @@ select {
     transform: rotate(-90deg);
 }
 
-#restaurant {
+#restaurant, #distance {
     border-radius: 8px;
     margin-top: 10px;
     padding: 8px 6px;
@@ -63,6 +64,9 @@ select {
     text-align: center;
     direction: ltr;
     border: none;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: xx-small;
+    box-shadow: 0 0 2px 1px rgba(145, 145, 145, 0.5); 
 }
 
 option {
@@ -127,3 +131,14 @@ option {
         margin: 10px;
     }
 }
+
+.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
