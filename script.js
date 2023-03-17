@@ -171,6 +171,6 @@ function chooseRestaurant() {
     };
 
     if (listSelection.value == '') {
-        alert( 'Choose favorites or new' );
+        alert( 'Select Favorites or New' );
     }
 }

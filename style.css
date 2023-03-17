@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(243, 0, 0, 0.507) 0%, rgba(1, 18, 255, 0.527) 100%);  
+    background: radial-gradient(circle, rgb(251, 255, 1) 0%,  rgba(243, 0, 0, 0.507) 100% );  
     /* background-color: #FBAB7E;
     background-image: linear-gradient(360deg, #4f69fc 0%, #fc694f 60%, #fc9458 80%, #F7CE68 100%);   */
 }
@@ -30,9 +30,9 @@ p {
 }
 
 #your-restaurant-picked {
-    font-size: 90px;
-    margin: 10px;
-    margin-bottom: 20px;
+    font-size: 80px;
+    margin: 40px;
+    margin-bottom: 40px;
     text-align: center;
     padding-top: 6px;
     padding-left: 20px;
@@ -79,6 +79,7 @@ option {
     border: solid 1px rgb(53, 53, 53);
     padding: 16px 14px;
     margin-top: 16px;
+    margin-bottom: 10%;
     border-radius: 10px;
     font-weight: normal;
     font-family: "Press Start 2P", sans-serif;
@@ -93,9 +94,9 @@ option {
 }
 
 @keyframes glow {
-    0% {box-shadow: 0 0 15px 5px white; }
+    0% {box-shadow: 0 0 25px 5px rgb(255, 123, 0); }
     50% {box-shadow: none;}
-    100% {box-shadow: 0 0 15px 5px white;}
+    100% {box-shadow: 0 0 25px 5px rgb(255, 123, 0); }
 }
   
 #restaurant-chooser:hover {
@@ -104,6 +105,10 @@ option {
 }
 
 @media (max-width: 1000px) {
+    #your-restauarant-picked {
+        font-size: 70px;
+    }
+
     #restaurant-chooser {
         width: 50%;
         padding: 10px;
@@ -116,7 +121,7 @@ option {
 
 @media (max-width: 700px) {
     #your-restaurant-picked {
-        font-size: 60px;
+        font-size: 50px;
         margin: 10px;
     }
 
@@ -127,7 +132,7 @@ option {
 
 @media (max-width: 500px) {
     #your-restaurant-picked {
-        font-size: 44px;
+        font-size: 36px;
         margin: 10px;
     }
 }
