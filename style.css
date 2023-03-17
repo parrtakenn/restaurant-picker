@@ -126,11 +126,21 @@ option {
     }
 
     #count-string {
-        padding-top: 24vh;
+        padding-top: 90%;
+    }
+
+    #restaurant-chooser {
+        width: 76%;
+        padding: 10px;
+    }
+
+    #restaurant {
+        width: 60%
     }
 }
 
 @media (max-width: 500px) {
+
     #your-restaurant-picked {
         font-size: 36px;
         margin: 10px;
