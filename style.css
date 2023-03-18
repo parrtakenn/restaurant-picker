@@ -19,8 +19,21 @@ p {
     padding-bottom: 50px;
 }
 
+.selectdiv:after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #0ebeff;
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
+}
+
 #count-string {
-    padding-top: 32vh;
+    padding-top: 28vh;
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 0px;
@@ -47,11 +60,9 @@ select {
     text-align: -moz-center;
     text-align-last: center;
     background-color: black;
-}
-
-#arrowDwn {
-    margin-left: 20px;
-    transform: rotate(-90deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #restaurant, #distance {
@@ -126,7 +137,7 @@ option {
     }
 
     #count-string {
-        padding-top: 40vh;
+        padding-top: 32vh;
     }
 
     #restaurant-chooser {
@@ -146,14 +157,3 @@ option {
         margin: 10px;
     }
 }
-
-.arrow {
-    box-sizing: border-box;
-    height: 5vw;
-    width: 5vw;
-    border-style: solid;
-    border-color: white;
-    border-width: 0px 1px 1px 0px;
-    transform: rotate(45deg);
-    transition: border-width 150ms ease-in-out;
-  }

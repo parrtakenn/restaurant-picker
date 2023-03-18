@@ -1,10 +1,6 @@
 const favRestaurants = [
     // Favorites
-    { 
-        name: "Joy Luck",
-        city: "Bountiful"
-    
-    },
+    "Joy Luck",
     "Boba World",
     "Pizza Hut",
     "The Pie Pizzeria",
@@ -156,8 +152,8 @@ function generateRandomVar(list) {
     randomNum = Math.floor(Math.random() * list.length);
 }
 
-function generateRandomRestaurant(list, listposition) {
-    document.getElementById('your-restaurant-picked').innerHTML = (list[listposition]);
+function generateRandomRestaurant(list, randomInt) {
+    document.getElementById('your-restaurant-picked').innerHTML = (list[randomInt]);
 }
 
 function chooseRestaurant() {
